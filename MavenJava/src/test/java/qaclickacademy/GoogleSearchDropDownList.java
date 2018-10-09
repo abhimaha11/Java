@@ -16,7 +16,7 @@ public class GoogleSearchDropDownList {
 	@Test
 	public void GoogleSearch()
 	{
-		System.setProperty("webdriver.chrome.driver", "C:/Users/kudyar/chromedriver/chromedriver.exe");
+		System.setProperty("webdriver.chrome.driver", System.getProperty("user.dir")+"//chromedriver.exe");
 		WebDriver driver = new ChromeDriver();
 		driver.manage().window().maximize();
 		driver.get("https://www.google.com/");
